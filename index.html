@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima con javascript</title>
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- ================== FUENTE DE GOOGLE FONT ================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- ================== BANCO DE ICONOS BOXICONS ================== -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <main class="contenedor">
+        <section class="cabecera">
+            <i class='cabecera__icon bx bx-left-arrow-alt'></i>Aplicación del clima
+        </section>
+        <section class="entrada">
+            <p class="entrada__info"></p>
+            <input class="entrada__caja" type="text" placeholder="Nombre de ciudad" spellcheck="false" required>
+            <div class="entrada__separador"></div>
+            <button class="entrada__boton">Obtener mi clima</button>
+        </section>
+        <div class="clima">
+            <img class="clima__img" src="#" alt="Whater icon">
+            <div class="clima__temp">
+                <span class="clima__temp__numb">_</span>
+                <span class="clima__temp__deg">°</span>C
+            </div>
+            <div class="tiempo">_</div>
+            <div class="ubicacion">
+                <i class="ubicacion__icon bx bx-map"></i>
+                <span class="ubicacion__detalles">_, _</span>
+            </div>
+            <div class="detalles">
+                <div class="temperatura detalles--column">
+                    <i class="detalles--icon bx bxs-thermometer"></i>
+                    <div class="detalle">
+                        <div class="detalle__temp">
+                            <span class="detalle__temp__numb2">_</span>
+                            <span class="detalle__temp__deg">°</span>C
+                        </div>
+                        <p class="detalle__txt">Temperatura</p>
+                    </div>
+                </div>
+                <div class="humedad detalles--column">
+                    <i class="detalles--icon bx bxs-droplet-half"></i>
+                    <div class="detalle">
+                        <span class="detalle__info">_</span>
+                        <p class="detalle__text">Humedad</p>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
